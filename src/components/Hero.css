@@ -1,0 +1,126 @@
+/* src/components/Hero.css */
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #4A5A40; /* Dark Sage text */
+  position: relative;
+}
+
+.hero-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #9CAF88; /* Sage green border */
+  box-shadow: 0 8px 15px rgba(156, 175, 136, 0.3);
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
+}
+
+.hero-section h1 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+  text-shadow: 1px 1px 3px rgba(212, 175, 55, 0.6); /* Gold subtle glow */
+}
+
+.hero-section h1 span {
+  color: #9CAF88; /* Sage Green highlight */
+}
+
+.hero-section h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #7A8B6F; /* Softer Sage */
+  font-style: italic;
+}
+
+.hero-section p {
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  color: #4A5A40;
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #9CAF88; /* Sage Green */
+  color: #F5F5DC; /* Cream */
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 12px rgba(156, 175, 136, 0.4);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #D4AF37; /* Gold */
+  color: #282C1B; /* Darker sage text */
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.6);
+  outline: none;
+}
+
+.contact-btn {
+  background-color: transparent;
+  border: 2px solid #9CAF88;
+  color: #9CAF88;
+  font-weight: 600;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+  background-color: #9CAF88;
+  color: #F5F5DC;
+  border-color: #9CAF88;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+
+  .hero-image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .hero-section p {
+    max-width: 90%;
+  }
+}

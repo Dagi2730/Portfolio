@@ -1,0 +1,64 @@
+.contact-section {   
+  background-color: #F5F5DC; /* Cream background */
+  color: #9CAF88; /* Sage Green text */
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 60px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(156, 175, 136, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  min-height: 400px;
+}
+
+.contact-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  color: #D4AF37; 
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-shadow: 0 0 6px #D4AF37;
+}
+
+.contact-section p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #6B8E70;
+  text-shadow: 0 0 2px rgba(156, 175, 136, 0.6);
+  margin: 10px 0;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.contact-info {
+  margin-top: 20px;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.contact-info * {
+  background: none !important;
+  box-shadow: none !important;
+  color: #6B8E70; /* Consistent sage tone */
+  font-weight: 500;
+}
+
+/* 📱 Optional: Responsive tweaks */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 15px;
+  }
+
+  .contact-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .contact-section p {
+    font-size: 1.1rem;
+  }
+}

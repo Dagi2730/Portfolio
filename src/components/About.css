@@ -1,0 +1,36 @@
+.about-section {
+  background-color: #F5F5DC; /* Cream */
+  color: #9CAF88; /* Sage Green */
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 60px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(156, 175, 136, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  min-height: 400px;
+}
+
+.about-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  color: #D4AF37; /* Gold */
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-shadow: 0 0 6px #D4AF37;
+}
+
+.about-section p.typing {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #6B8E70; /* Darker sage */
+  text-shadow: 0 0 2px rgba(156, 175, 136, 0.6);
+  max-width: 700px;
+  white-space: pre-wrap; /* Preserve spaces & wrap text */
+  word-wrap: break-word;
+}
